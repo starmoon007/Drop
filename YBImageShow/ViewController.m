@@ -8,7 +8,19 @@
 
 #import "ViewController.h"
 
+#import "YBImageShowView.h"
+
+
+
+
 @interface ViewController ()
+
+
+@property (weak, nonatomic) IBOutlet YBImageShowView *imageShowView;
+
+@property (strong, nonatomic) NSMutableArray * image_model_array;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scroll_view;
 
 @end
 
@@ -16,12 +28,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.scroll_view.contentSize = CGSizeMake(self.view.bounds.size.width, 700);
+    
+    self.imageShowView.image_model_array = self.image_model_array;
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+
+-(NSMutableArray *)image_model_array{
+    
+    if (_image_model_array == nil){
+        _image_model_array = [[NSMutableArray alloc]init];
+        for (int i=0; i<14; i++) {
+            YBImageModel *model = [[YBImageModel alloc]init];
+//            NSString *imagePath = [[NSBundle mainBundle]pathForResource:[NSString stringWithFormat:@"%d",i+1] ofType:@"png"];
+//            model.thumbnail_image = [UIImage imageWithContentsOfFile:imagePath];
+            NSString *imageName = [NSString stringWithFormat:@"%d",i%3+1];
+            model.thumbnail_image = [UIImage imageNamed:imageName];
+            [_image_model_array addObject:model];
+        }
+    }
+    return _image_model_array;
 }
+
 
 @end
