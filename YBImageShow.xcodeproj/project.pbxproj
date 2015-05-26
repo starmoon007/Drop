@@ -17,7 +17,6 @@
 		D0E76F671B007DF800AE2F65 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E76C661B007DF600AE2F65 /* 1.png */; };
 		D0E76F691B007DF800AE2F65 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E76C681B007DF600AE2F65 /* 2.png */; };
 		D0E76F6A1B007DF800AE2F65 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E76C691B007DF600AE2F65 /* 3.png */; };
-		D0E771101B007DF800AE2F65 /* av.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D0E76F651B007DF800AE2F65 /* av.mp4 */; };
 		D0E7715D1B01DAF100AE2F65 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D0E7713B1B01DAF100AE2F65 /* LICENSE */; };
 		D0E7715E1B01DAF100AE2F65 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D0E7713C1B01DAF100AE2F65 /* README.md */; };
 		D0E7715F1B01DAF100AE2F65 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E7713E1B01DAF100AE2F65 /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -64,7 +63,6 @@
 		D0E76C661B007DF600AE2F65 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		D0E76C681B007DF600AE2F65 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		D0E76C691B007DF600AE2F65 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
-		D0E76F651B007DF800AE2F65 /* av.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = av.mp4; sourceTree = "<group>"; };
 		D0E7713B1B01DAF100AE2F65 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D0E7713C1B01DAF100AE2F65 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D0E7713D1B01DAF100AE2F65 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 				D0E76C661B007DF600AE2F65 /* 1.png */,
 				D0E76C681B007DF600AE2F65 /* 2.png */,
 				D0E76C691B007DF600AE2F65 /* 3.png */,
-				D0E76F651B007DF800AE2F65 /* av.mp4 */,
 			);
 			path = "海贼王";
 			sourceTree = "<group>";
@@ -330,7 +327,6 @@
 				D0E76F6A1B007DF800AE2F65 /* 3.png in Resources */,
 				D0E771691B01DAF100AE2F65 /* YBImageOriginalCell.xib in Resources */,
 				D0E76F691B007DF800AE2F65 /* 2.png in Resources */,
-				D0E771101B007DF800AE2F65 /* av.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
