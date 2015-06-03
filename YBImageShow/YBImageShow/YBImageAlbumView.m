@@ -43,6 +43,7 @@
     UIImageView *view = (UIImageView *)image_model.current_view;
     
     CGRect rect = [window convertRect:view.frame fromView:view.superview];
+    image_model.thumbmail_frame = rect;
     
     UIImageView *shadow_view = [[UIImageView alloc]initWithFrame:rect];
     shadow_view.image = view.image;
