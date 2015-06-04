@@ -20,7 +20,6 @@
 
 @property (strong, nonatomic) NSMutableArray * image_model_array;
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scroll_view;
 
 @end
 
@@ -28,8 +27,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.scroll_view.contentSize = CGSizeMake(self.view.bounds.size.width, 700);
     
     self.imageShowView.image_model_array = self.image_model_array;
     

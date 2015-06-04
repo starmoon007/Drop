@@ -16,46 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zed-50-9zv">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nks-if-NFD" customClass="YBImageShowView">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <color key="backgroundColor" red="0.84740427910000005" green="0.94577819110000005" blue="0.82271450300000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="2" y="37" width="320" height="187"/>
-                                        </variation>
-                                    </view>
-                                </subviews>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="Nks-if-NFD"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="325" height="568"/>
-                                    <mask key="subviews">
-                                        <include reference="Nks-if-NFD"/>
-                                    </mask>
-                                </variation>
-                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAo-uE-Yt4" customClass="YBImageShowView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="zed-50-9zv"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="zed-50-9zv"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KAo-uE-Yt4" secondAttribute="trailing" id="026-8K-x90"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KAo-uE-Yt4" secondAttribute="bottom" id="Aku-eF-jei"/>
+                            <constraint firstItem="KAo-uE-Yt4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ROc-nT-HyO"/>
+                            <constraint firstItem="KAo-uE-Yt4" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="n4C-Sl-TfA"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="imageShowView" destination="Nks-if-NFD" id="GLc-Pj-X2a"/>
-                        <outlet property="scroll_view" destination="zed-50-9zv" id="CaJ-k8-Y2f"/>
+                        <outlet property="imageShowView" destination="KAo-uE-Yt4" id="5Rv-f1-bKb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
